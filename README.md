@@ -1,5 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
+Création d'un simple éditeur de diagramme en React.js
 ## Available Scripts
 
 In the project directory, you can run:
