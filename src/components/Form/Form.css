@@ -1,0 +1,31 @@
+
+.form-control {
+    border: 0px solid rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 4px;
+    display: block;
+    width: 100%;
+    margin: 10px auto;
+    padding: 10px 10px;
+}
+
+.btn {
+    background: rgb(0, 208, 132) none repeat scroll 0% 0%;
+    cursor: pointer;
+    outline: currentcolor none medium;
+    border-radius: 4px;
+    margin: 30px 6px 6px 0px;
+    padding: 15px 15px;
+    border: solid transparent 1px;
+    color:#fff;
+    font-size: 16px;
+}
+
+.btn:hover {
+    display: inline-block;
+    background: transparent;
+    border-color: rgb(0, 208, 132);
+    color:rgb(0, 208, 132);
+}
+
