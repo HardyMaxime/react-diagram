@@ -1,4 +1,4 @@
-Création d'un simple éditeur de diagramme en React.js
+Create a simple diagram editor in React.js
 ## Available Scripts
 
 In the project directory, you can run:
