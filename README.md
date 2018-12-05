@@ -1,4 +1,7 @@
-Create a simple diagram editor in React.js
+Create a simple diagram editor in React.js 
+
+Demo : https://hardymaxime.github.io/react-diagram/
+
 ## Available Scripts
 
 In the project directory, you can run:
