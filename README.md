@@ -1,4 +1,6 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Create a simple diagram editor in React.js 
+
+Demo : https://hardymaxime.github.io/react-diagram/
 
 ## Available Scripts
 
