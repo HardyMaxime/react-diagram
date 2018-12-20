@@ -10,8 +10,8 @@ const form = props => {
     return (
        <form action="#" >
               <input className="form-control" type="text" name="" placeholder="Custom Chart Title" onChange={props.onChangeChartTitle} />
-              <input className="form-control" type="text" name="" placeholder="Add data" onChange={props.onInputChangeHandler} />
-              <input className="form-control" type="number" onChange={props.onNumberChangeHandler} placeholder="Choose a number" name="" />
+              <input className="form-control" value={props.inputContentValue} type="text" name="" placeholder="Add data" onChange={props.onInputChangeHandler} />
+              <input className="form-control" value={props.inputNumberValue} type="number" onChange={props.onNumberChangeHandler} placeholder="Choose a number" name="" />
               <div className="form-picker">
                 <TwitterPicker color={ props.background }
                   onChangeComplete={ props.complete } 
@@ -24,12 +24,14 @@ const form = props => {
 }
 
 form.propTypes = {
-    onChangeChartTitle: PropTypes.func.isRequired,
-    onInputChangeHandler: PropTypes.func.isRequired,
-    onNumberChangeHandler: PropTypes.func.isRequired,
-    click: PropTypes.func.isRequired,
-    background: PropTypes.string.isRequired,
-    complete: PropTypes.func.isRequired
+    onChangeChartTitle: PropTypes.func,
+    onInputChangeHandler: PropTypes.func,
+    onNumberChangeHandler: PropTypes.func,
+    click: PropTypes.func,
+    background: PropTypes.string,
+    complete: PropTypes.func,
+    inputContentValue: PropTypes.string,
+    inputNumberValue: PropTypes.number
 }
 
 

@@ -7,8 +7,8 @@ import './App.css'
 
 class App extends Component {
 
-    constructor(props) {
-        super(props);
+    constructor() {
+        super()
 
         this.state = {
             inputContent: '',
@@ -92,6 +92,8 @@ class App extends Component {
   onClickHandler = (e) => {
     e.preventDefault()
     this.setState(prevState => ({
+      inputContent : '',
+      inputNumber: 0,
       data: {
          ...prevState.data,
         labels: [...prevState.data.labels, this.state.inputContent],
@@ -128,7 +130,9 @@ class App extends Component {
             <Form onInputChangeHandler={this.onInputChangeHandler} onNumberChangeHandler={this.onNumberChangeHandler} 
               background={this.state.inputBackgroundColor} complete={this.handleChangeComplete}
               click={this.onClickHandler} onChangeChartTitle={this.onChangeChartTitle}
-              onChangeCheckBox={this.onChangeCheckBoxHandler} checkBoxValue={this.state.checkBox} / >
+              onChangeCheckBox={this.onChangeCheckBoxHandler} checkBoxValue={this.state.checkBox} 
+              inputContentValue={this.state.inputContent} inputNumberValue={this.state.inputNumber}
+              />
 
              
           </div>
